@@ -10,6 +10,7 @@ import { UnicopokemonComponent } from './estrutura/unicopokemon/unicopokemon.com
   imports: [RouterOutlet,CabecalhoComponent,ExbirPokemonComponent,UnicopokemonComponent],
   templateUrl :'./app.component.html'
 })
+
 export class AppComponent {
   title = 'pokedex';
 }
