@@ -29,4 +29,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.PEDRA_ACESSO }}
-        publish_dir: ./dist/pokedex/src # Substitua "pokedex" pelo nome correto do seu projeto, se necessário
+        publish_dir: ./dist/pokedex/browser # Substitua "pokedex" pelo nome correto do seu projeto, se necessário
