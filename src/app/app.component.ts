@@ -8,8 +8,9 @@ import { UnicopokemonComponent } from './estrutura/unicopokemon/unicopokemon.com
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,CabecalhoComponent,ExbirPokemonComponent,UnicopokemonComponent],
-  templateUrl :'./app.Component.html'
+  templateUrl :'./app.component.html'
 })
+
 export class AppComponent {
   title = 'pokedex';
 }

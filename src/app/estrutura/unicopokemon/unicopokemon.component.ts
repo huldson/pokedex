@@ -8,7 +8,7 @@ import { RequisicaoPokemon } from './requisicaoPokemon';
   selector: 'app-unicopokemon',
   standalone: true,
   imports: [CommonModule],
-  templateUrl :'./unicopokemon.Component.html',
+  templateUrl :'./unicopokemon.component.html',
   styleUrl:'./unicopokemonComponent.css'
 })
 export class UnicopokemonComponent {
