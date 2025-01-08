@@ -1,0 +1,22 @@
+
+
+<div class="container">
+        
+        <img class="item2" src="https://i.imgur.com/vM6avkj.jpeg" alt="cenario">     
+         
+ <div class="pokedex">       
+        <img class="item"src="https://i.imgur.com/naGppZD.png" alt="poke">  
+        
+ </div>     
+       
+<div class="imagempokemon">
+        <img class="imagemtamanho" [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+id+'.png'" alt="pokemon">
+        <h3 class="letra">{{informacao.name}}</h3>  
+</div>
+
+</div>
+<div class="tiposcontainer"> 
+<div class="tipos" *ngFor="let element of informacao.types"> 
+        <label class="tipo {{element.type?.name}}">{{element.type?.name}}</label> 
+</div>
+</div>

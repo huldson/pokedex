@@ -1,0 +1,10 @@
+#cabecalhopokemon{
+    color: #B22222; /* Firebrick Red */
+    background-color: #ff0000; /* OrangeRed */
+    text-shadow: 1px 1px 2px #8B0000, 0 0 5px #ec1e1e, 0 0 10px #ff0000;
+ 
+}
+#letrapokemon{
+    color: yellow;
+    
+}

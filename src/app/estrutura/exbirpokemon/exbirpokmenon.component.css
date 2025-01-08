@@ -1,0 +1,27 @@
+.pokedex-container{    
+    display:grid;
+    grid-template-columns: repeat(15,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.pokemon-card{
+  
+    text-align: center;
+    background-color:azure;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(155, 17, 17, 0.5);
+    border-radius: 10px;
+   width: 100px;
+}
+button{
+    border: 0px;
+}
+.pokemon-card:hover{
+    text-align: center;
+    background-color:azure;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(155, 17, 17, 0.5);
+    border-radius: 10px;
+    transform: scale(1.1);
+}

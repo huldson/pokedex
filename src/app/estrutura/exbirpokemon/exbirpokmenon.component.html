@@ -1,0 +1,12 @@
+<div class="pokedex-container">
+    <div *ngFor="let item of listpokmeon">
+    <button class="butao" (click)="detalhes(item.url)">
+        <div class="pokemon-cardex">
+    <div class="pokemon-card" >
+    <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+getPokemonId(item.url!)+'.png'" alt="">
+<label>{{item.name}}</label>
+    </div>
+</div>
+</button>
+</div>
+</div>
