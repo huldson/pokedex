@@ -1,32 +1,6 @@
-name: Deploy Angular to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-      - develop # Substitua por outro branch, se necessário
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18  # Versão compatível com o Angula
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build Angular project
-      run: npm run build --prod -- --output-path=dist
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.PEDRA_ACESSO }}
-        publish_dir: ./dist/pokedex/browser/pokemons # Substitua "pokedex" pelo nome correto do seu projeto, se necessário
+ name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.PEDRA_ACESSO }}  # Certifique-se de que o token tem permissão para fazer push para a branch 'gh-pages'
+    publish_dir: ./dist/pokedex/browser/pokemons  # O caminho onde os arquivos finais são gerados
+    publish_branch: gh-pages  
