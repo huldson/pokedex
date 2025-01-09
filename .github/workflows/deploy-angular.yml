@@ -17,7 +17,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18  # Versão compatível com o Angular
+        node-version: 18  # Versão compatível com o Angula
 
     - name: Install dependencies
       run: npm install
@@ -29,4 +29,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.PEDRA_ACESSO }}
-        publish_dir: ./dist/pokedex/src # Substitua "pokedex" pelo nome correto do seu projeto, se necessário
+        publish_dir: ./dist/pokedex 
