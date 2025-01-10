@@ -107,5 +107,8 @@
   },
   "cli": {
     "analytics": "0c7ed589-1754-4a7e-9aac-825fd08572d9"
-  }
+  },"scripts": {
+  "postbuild": "rename dist/index.rsc dist/index.html"
+}
+
 }
